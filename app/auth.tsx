@@ -6,7 +6,7 @@ const Auth = () => {
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"}>
 
             <View>
-                <Text> Create account   </Text>
+                <Text> Create account 1  </Text>
             </View>
         </KeyboardAvoidingView>
     );
