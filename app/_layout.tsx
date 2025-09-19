@@ -2,14 +2,16 @@ import {Stack, useRouter} from "expo-router";
 import {useEffect} from "react";
 
 function RouteGuard({children}: {children: React.ReactNode}) {
-  const router = useRouter();
   const isAuth = false;
+const router =useRouter();
   useEffect(() => {
-    if (!isAuth) {
+    if (!isAuth){
       router.replace("/auth");
 
     }
-  })
+  }, []);
+
+
   return <>{children}</>;
 }
 
